@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29403.142
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Apresentation", "1-Apresentation", "{7382A303-4732-47BD-9534-A041FD9AE56E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Application", "2-Application", "{A47040FF-AAE7-428B-9D0D-C9BFF9A847DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Domain", "3-Domain", "{CA74E37E-00D2-4CD6-9CB3-B198D20A46F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Infra", "4-Infra", "{FC755B5E-357B-46BA-8394-95A34F0BC433}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apresentation.Mvc", "src\Apresentation.Mvc\Apresentation.Mvc.csproj", "{BC8BEE90-3475-408F-B732-6C05EAE669E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErpHospitalar.Domain", "src\ErpHospitalar.Domain\ErpHospitalar.Domain.csproj", "{3295AC33-1B9C-428D-9651-A915AEFEE883}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1-Data", "4.1-Data", "{A7D8D1BA-CA3C-4F97-9433-056F9707677B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2-MapEntity", "4.2-MapEntity", "{EA35AC0D-1FB1-4DE0-89F9-CCA51C3315D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErpHospitalar.Data", "src\ErpHospitalar.Data\ErpHospitalar.Data.csproj", "{710EDA05-85B5-412A-AC50-C50421FFC7F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC8BEE90-3475-408F-B732-6C05EAE669E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC8BEE90-3475-408F-B732-6C05EAE669E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC8BEE90-3475-408F-B732-6C05EAE669E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC8BEE90-3475-408F-B732-6C05EAE669E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3295AC33-1B9C-428D-9651-A915AEFEE883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3295AC33-1B9C-428D-9651-A915AEFEE883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3295AC33-1B9C-428D-9651-A915AEFEE883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3295AC33-1B9C-428D-9651-A915AEFEE883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{710EDA05-85B5-412A-AC50-C50421FFC7F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{710EDA05-85B5-412A-AC50-C50421FFC7F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{710EDA05-85B5-412A-AC50-C50421FFC7F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{710EDA05-85B5-412A-AC50-C50421FFC7F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BC8BEE90-3475-408F-B732-6C05EAE669E1} = {7382A303-4732-47BD-9534-A041FD9AE56E}
+		{3295AC33-1B9C-428D-9651-A915AEFEE883} = {CA74E37E-00D2-4CD6-9CB3-B198D20A46F1}
+		{A7D8D1BA-CA3C-4F97-9433-056F9707677B} = {FC755B5E-357B-46BA-8394-95A34F0BC433}
+		{EA35AC0D-1FB1-4DE0-89F9-CCA51C3315D8} = {FC755B5E-357B-46BA-8394-95A34F0BC433}
+		{710EDA05-85B5-412A-AC50-C50421FFC7F1} = {A7D8D1BA-CA3C-4F97-9433-056F9707677B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E852104-E460-4D8B-88B4-FE1996D400D4}
+	EndGlobalSection
+EndGlobal
