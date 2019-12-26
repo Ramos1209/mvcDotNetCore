@@ -3,10 +3,22 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ErpHospitalar.Data.Migrations
 {
-    public partial class Initial : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "EstadoPaciente",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(nullable: false),
+                    Descricao = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_EstadoPaciente", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "Pacientes",
                 columns: table => new
@@ -32,6 +44,9 @@ namespace ErpHospitalar.Data.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "EstadoPaciente");
+
             migrationBuilder.DropTable(
                 name: "Pacientes");
         }

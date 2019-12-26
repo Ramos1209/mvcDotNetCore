@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ErpHospitalar.Data.Migrations
 {
     [DbContext(typeof(ERPHospitalarContext))]
-    [Migration("20191220182325_Initial")]
-    partial class Initial
+    [Migration("20191226143147_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,6 +20,20 @@ namespace ErpHospitalar.Data.Migrations
                 .HasAnnotation("ProductVersion", "3.0.0")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+            modelBuilder.Entity("ErpHospitalar.Domain.Entities.EstadoPaciente", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Descricao")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("EstadoPaciente");
+                });
 
             modelBuilder.Entity("ErpHospitalar.Domain.Entities.Paciente", b =>
                 {

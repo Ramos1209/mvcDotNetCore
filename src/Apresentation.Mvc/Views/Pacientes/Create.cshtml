@@ -1,0 +1,30 @@
+﻿@model ErpHospitalar.Domain.Entities.Paciente
+
+@{
+    ViewData["Title"] = "Add ";
+}
+
+
+<div class="row">
+    <div class="panel panel-heading">
+        <h3>Adicionar o Paciente</h3>
+    </div>
+    <div class="panel panel-body">
+        <div class="row">
+            <div class="col-md-8">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <partial name="_create_edit" />
+                  
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-success" /> |
+
+                        <a asp-action="Index" class="btn btn-default">Back to List</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\plugins\charts\sparklines\plugins.js" />
     <Content Remove="wwwroot\plugins\charts\sparklines\plugins.min.js" />
   </ItemGroup>
 

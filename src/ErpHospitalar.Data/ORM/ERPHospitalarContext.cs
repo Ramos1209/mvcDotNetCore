@@ -11,5 +11,6 @@ namespace ErpHospitalar.Data.ORM
         }
 
         public DbSet<Paciente> Pacientes { get; set; }
+        public DbSet<EstadoPaciente> EstadoPaciente { get; set; }
     }
 }
