@@ -23,4 +23,9 @@
     <ProjectReference Include="..\ErpHospitalar.Data\ErpHospitalar.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ViewComponents\CabecalhoModulo\" />
+    <Folder Include="Views\Shared\ViewComponents\CabecalhoModulo\" />
+  </ItemGroup>
+
 </Project>

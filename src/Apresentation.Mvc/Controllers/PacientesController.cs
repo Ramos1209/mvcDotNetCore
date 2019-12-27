@@ -71,11 +71,7 @@ namespace Apresentation.Mvc.Controllers
         // GET: Pacientes/Edit/5
         public async Task<IActionResult> Edit(Guid? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
+          
             var paciente = await _context.Pacientes.FindAsync(id);
             if (paciente == null)
             {
