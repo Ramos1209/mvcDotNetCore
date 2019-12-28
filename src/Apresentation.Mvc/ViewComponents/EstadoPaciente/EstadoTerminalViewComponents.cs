@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace Apresentation.Mvc.ViewComponents.EstadoPaciente
 {
-    [ViewComponent(Name = "Terminal")]
+    [ViewComponent(Name = "EstadoTerminal")]
     public class EstadoTerminalViewComponents : ViewComponent
     {
 

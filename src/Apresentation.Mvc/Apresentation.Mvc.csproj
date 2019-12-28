@@ -25,7 +25,7 @@
 
   <ItemGroup>
     <Folder Include="ViewComponents\CabecalhoModulo\" />
-    <Folder Include="Views\Shared\ViewComponents\CabecalhoModulo\" />
+    <Folder Include="Views\Shared\Components\CabecalhoModulo\" />
   </ItemGroup>
 
 </Project>
