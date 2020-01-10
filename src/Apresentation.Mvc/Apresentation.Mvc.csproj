@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <PackageReference Include="BuildBundlerMinifier" Version="3.2.435" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.0">
       <PrivateAssets>all</PrivateAssets>
@@ -21,11 +23,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ErpHospitalar.Data\ErpHospitalar.Data.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ViewComponents\CabecalhoModulo\" />
-    <Folder Include="Views\Shared\Components\CabecalhoModulo\" />
   </ItemGroup>
 
 </Project>

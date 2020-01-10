@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace ErpHospitalar.Domain.Entities
 {
@@ -6,5 +7,6 @@ namespace ErpHospitalar.Domain.Entities
     {
      
         public string Descricao { get; set; }
+        public virtual ICollection<Paciente> Paciente { get; set; }
     }
 }

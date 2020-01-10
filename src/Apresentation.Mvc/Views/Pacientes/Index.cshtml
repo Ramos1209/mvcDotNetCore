@@ -3,13 +3,13 @@
 @{
     ViewData["Title"] = "Lista de Pacientes";
 }
+    <vc:cabecalho titulo="Medical Manager SYS " subtitulo="Lista de  Pacientes"></vc:cabecalho>
+    <partial name="PartialViews/_estado_paciente" />
 
-<div class="row">
+<div class="panel panel-default panel-controls">
     <div class="panel panel-heading">
         <h3>LIstagem de Pacientes</h3>
     </div>
-
-
     <div class="panel panel-body">
         <p>
             <a asp-action="Create" class="btn btn-info"><span class="fa fa-plus-circle"></span>&nbsp;&nbsp;Adicionar Paciente</a>

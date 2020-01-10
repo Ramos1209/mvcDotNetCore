@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -7,9 +6,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ErpHospitalar.Data.ORM;
 using ErpHospitalar.Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Apresentation.Mvc.Controllers
 {
+    [Authorize(Roles="Admin")]
     public class PacientesController : Controller
     {
         private readonly ERPHospitalarContext _context;
